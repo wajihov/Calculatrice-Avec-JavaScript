@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>C A L C U L A T R I C E</title>
+</head>
+<body onload="myLoad()"> 
+    <!-- <div class="calculator">
+        <input class="screen" id="screen" value="0" />
+            <div class="btn">
+                <button id="clear" value="">C</button>
+                <button id="backspace" value="-">&#8592</button>
+                <button id="sign" value="-+">&#x00B1</button>
+                <button id="devide" value="\">&#47</button>
+                <button class="degits" value="7">7</button>
+                <button class="degits" value="8">8</button>
+                <button class="degits" value="9">9</button>
+                <button id="multiply" value="*">X</button>
+                <button class="degits" value="4">4</button>
+                <button class="degits" value="5">5</button>
+                <button class="degits" value="6">6</button>
+                <button id="minus" value="-">-</button>
+                <button class="degits" value="1">1</button>
+                <button class="degits" value="2">2</button>
+                <button class="degits" value="3">3</button>
+                <button id="plus" value="+">+</button>
+                <button class="degits" value="0">0</button>
+                <button class="degits" value=".">.</button>
+                <button id="=" value="=">=</button>        
+            </div>
+    </div> -->
+    <form name="calculator" action="" onsubmit="result(); return false" >
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" size="20" readonly class="screen" name="affiche">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" onclick="addChar('7')"  class="mainBtn" />                        
+                    </td>
+                    <td>
+                        <input type="button" value="8"  onclick="addChar('8')"   class="mainBtn" />
+                    </td>
+                    <td>
+                        <input type="button" value="9"  onclick="addChar('9')"   class="mainBtn"/>
+                    </td>
+                    <td>
+                        <input type="button" value="+" onclick="addChar('+')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" onclick="addChar('4')" class="mainBtn">
+                    </td>
+                    <td>
+                            <input type="button" value="5" onclick="addChar('5')" class="mainBtn">
+                    </td>
+                    <td>
+                        <input type="button" value="6" onclick="addChar('6')" class="mainBtn">
+                    </td>
+                    <td>
+                        <input type="button" value="-" onclick="addChar('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" onclick="addChar('1')" class="mainBtn">
+                    </td>
+                    <td>
+                            <input type="button" value="2" onclick="addChar('2')" class="mainBtn">
+                    </td>
+                    <td>
+                        <input type="button" value="3" onclick="addChar('3')" class="mainBtn">
+                    </td>
+                    <td>
+                        <input type="button" value="*" onclick="addChar('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="0" onclick="addChar('0')" class="mainBtn">
+                    </td>
+                    <td>
+                            <input type="button" value="." onclick="addChar('.')" class="mainBtn">
+                    </td>
+                    <td>
+                        <input type="reset" value="C" class="mainBtn">
+                    </td>
+                    <td>
+                        <input type="button" value="/" onclick="addChar('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" size="15" readonly class="screen2"/>
+                    </td>
+                    <td>
+                        <input type="button" value="=" onclick="result()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table id="historyList">
+            <tbody>                
+            </tbody>
+        </table>
+    </form>
+
+
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
